@@ -12,17 +12,17 @@ Assalamu'alaikum <img src="https://user-images.githubusercontent.com/1303154/886
 
 <h1 align="center"> Connect with me
 <p align="center">
-<a href="https://instagram.com/kanggara75"><img src="https://img.shields.io/badge/Instagram-Call_Vin-E4405F?style=for-the-badge&logo=instagram"/></a>
+<a href="https://instagram.com/kanggara75"><img src="https://img.shields.io/badge/Instagram-Call_Vin-E4405F?style=for-the-badge&logo=instagram"/>
 <br>
-<a href="https://facebook.com/kanggara75"><img src="https://img.shields.io/badge/Facebook-Call_Vin-4267B2?style=for-the-badge&logo=facebook&logoColor=4267B2"/></a>
+<a href="https://facebook.com/kanggara75"><img src="https://img.shields.io/badge/Facebook-Call_Vin-4267B2?style=for-the-badge&logo=facebook&logoColor=4267B2"/>
 <br>
-<a href="https://t.me/kanggara75/"><img src="https://img.shields.io/badge/Telegram-Call_Vin-0088cc?style=for-the-badge&logo=telegram&logoColor=0088cc"/></a>
+<a href="https://t.me/kanggara75/"><img src="https://img.shields.io/badge/Telegram-Call_Vin-0088cc?style=for-the-badge&logo=telegram&logoColor=0088cc"/>
 <br>
-<a href="https://www.linkedin.com/in/kanggara75/"><img src="https://img.shields.io/badge/Linkedin-Call_Vin-0072b1?style=for-the-badge&logo=linkedin&logoColor=0072b1"/></a>
+<a href="https://www.linkedin.com/in/kanggara75/"><img src="https://img.shields.io/badge/Linkedin-Call_Vin-0072b1?style=for-the-badge&logo=linkedin&logoColor=0072b1"/>
 <br>
-<a href="https://github.com/in/kanggara75/"><img src="https://img.shields.io/badge/Github-Call_Vin-fafafa?style=for-the-badge&logo=github"/></a>
+<a href="https://github.com/in/kanggara75/"><img src="https://img.shields.io/badge/Github-Call_Vin-fafafa?style=for-the-badge&logo=github"/>
 <br>
-<a href="https://youtube.com/channel/UCt8g8m9iw39HB7Hb_m43BBQ"><img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UCt8g8m9iw39HB7Hb_m43BBQ?color=FF0000&label=Youtube&logo=youtube&logoColor=FF0000&style=for-the-badge"/></a>
+<a href="https://youtube.com/channel/UCt8g8m9iw39HB7Hb_m43BBQ"><img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UCt8g8m9iw39HB7Hb_m43BBQ?color=FF0000&label=Youtube&logo=youtube&logoColor=FF0000&style=for-the-badge"/>
 <br>
 </p>
 
