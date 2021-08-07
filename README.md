@@ -61,6 +61,6 @@ Assalamu'alaikum <img src="https://user-images.githubusercontent.com/1303154/886
 <details>
     <summary>&#127942 <b>GitHub Activity</b></summary><br/>
 
-![Metrics](https://metrics.lecoq.io/kanggara75?template=classic&isocalendar=1&languages=1&lines=1&activity=1&tweets=1&isocalendar.duration=full-year&languages.limit=8&languages.sections=most-used&languages.colors=github&languages.threshold=0%25&languages.indepth=false&languages.recent.load=300&languages.recent.days=14&activity.limit=5&activity.load=300&activity.days=14&activity.filter=all&activity.visibility=all&activity.timestamps=false&tweets.attachments=false&tweets.limit=2&tweets.user=kanggara75&config.timezone=Asia%2FJakarta)
+![Metrics](https://metrics.lecoq.io/kanggara75?template=classic&base.community=0&base.metadata=0&languages=1&wakatime=1&tweets=1&lines=1&languages.limit=8&languages.sections=most-used&languages.colors=github&languages.threshold=0%25&languages.indepth=false&languages.recent.load=300&languages.recent.days=14&tweets.attachments=false&tweets.limit=2&tweets.user=.user.twitter&wakatime.days=7&wakatime.sections=time%2C%20projects%2C%20projects-graphs%2C%20languages%2C%20languages-graphs%2C%20editors%2C%20os&wakatime.limit=5&wakatime.url=https%3A%2F%2Fwakatime.com%2Fkanggara75&wakatime.user=current&config.timezone=Asia%2FJakarta)
 
 </details>
