@@ -5,10 +5,8 @@ Assalamu'alaikum <img src="https://user-images.githubusercontent.com/1303154/886
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/kanggara75/kanggara75?label=Last%20Update&style=for-the-badge)
 
-- 🇮🇩 I am 17 years old
 - 💻 I am will be programmer
-- 🌱 I’m currently learning web and mobile app Programing
-- 💬 Ask me about programing and tech
+- 🌱 I’m currently learning Web and Mobile app Programing
 
 <h1 align="center"> Connect with me
 <p align="center">
@@ -32,6 +30,10 @@ Assalamu'alaikum <img src="https://user-images.githubusercontent.com/1303154/886
 
 ![GitHub last commit](https://github-readme-stats.vercel.app/api?username=kanggara75&show_icons=true&theme=radical)
 ![GitHub last commit](https://github-readme-stats.vercel.app/api/top-langs/?username=kanggara75&theme=radical&layout=compact)
+
+## WakaTime
+
+![Wakatime](https://wakatime.com/share/@kanggara75/d06cb2b4-cc77-47d3-aa5d-7b2ff0310feb.svg)
 
 ## Repo Stats
 
@@ -61,6 +63,6 @@ Assalamu'alaikum <img src="https://user-images.githubusercontent.com/1303154/886
 <details>
     <summary>&#127942 <b>GitHub Activity</b></summary><br/>
 
-![Metrics](https://metrics.lecoq.io/kanggara75?template=classic&base.community=0&base.metadata=0&languages=1&wakatime=1&tweets=1&lines=1&languages.limit=8&languages.sections=most-used&languages.colors=github&languages.threshold=0%25&languages.indepth=false&languages.recent.load=300&languages.recent.days=14&tweets.attachments=false&tweets.limit=2&tweets.user=.user.twitter&wakatime.days=7&wakatime.sections=time%2C%20projects%2C%20projects-graphs%2C%20languages%2C%20languages-graphs%2C%20editors%2C%20os&wakatime.limit=5&wakatime.url=https%3A%2F%2Fwakatime.com%2Fkanggara75&wakatime.user=current&config.timezone=Asia%2FJakarta)
+![Metrics](https://metrics.lecoq.io/kanggara75?template=classic&base.community=0&base.metadata=0&languages=1&wakatime=1&tweets=1&lines=1&languages.limit=8&languages.sections=most-used&languages.colors=github&languages.threshold=0%25&languages.indepth=false&languages.recent.load=300&languages.recent.days=14&config.timezone=Asia%2FJakarta)
 
 </details>
