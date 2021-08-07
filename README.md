@@ -3,7 +3,7 @@
 
 Assalamu'alaikum <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="40px" alt="hi"><br>My Name is Call Vin 😎</h1>
 
-![GitHub last commit](https://img.shields.io/github/last-commit/kanggara75/kanggara75?label=Last%20Update&style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/kanggara75/kanggara75?color=blue&label=Last%20Update&style=for-the-badge)
 
 - 💻 I am will be programmer
 - 🌱 I’m currently learning Web and Mobile app Programing
