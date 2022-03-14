@@ -10,9 +10,9 @@ Assalamu'alaikum <img src="https://user-images.githubusercontent.com/1303154/886
 
 <h1 align="center"> Connect with me
 <p align="center">
-<a href="https://stackoverflow.com/cv/kanggara75"><img src="https://www.codewars.com/users/kanggara75/badges/small"/></a>
+<a href="https://www.codewars.com/users/kanggara75"><img src="https://www.codewars.com/users/kanggara75/badges/small"/></a>
 <br>
-<a href="https://www.codewars.com/users/kanggara75"><img src="https://img.shields.io/badge/Stackoverflow-Call_Vin-ef8236?style=for-the-badge&logo=stackoverflow&logoColor=ef8236"/></a>
+<a href="https://stackoverflow.com/cv/kanggara75"><img src="https://img.shields.io/badge/Stackoverflow-Call_Vin-ef8236?style=for-the-badge&logo=stackoverflow&logoColor=ef8236"/></a>
 <br>
 <a href="https://instagram.com/kanggara75"><img src="https://img.shields.io/badge/Instagram-Call_Vin-E4405F?style=for-the-badge&logo=instagram"/></a>
 <br>
