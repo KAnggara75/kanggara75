@@ -60,17 +60,3 @@ Assalamu'alaikum <img src="https://user-images.githubusercontent.com/1303154/886
 ![OS](https://img.shields.io/badge/Other_OS-Linux-blue?&logo=linux)
 
 ![OS](https://img.shields.io/badge/Text_Editor-Visual_Studio_Code-blue?&logo=visualstudiocode&logoColor=blue)
-
-<details>
-    <summary>&#127942 <b>GitHub Awards</b></summary><br/>
-
-![Github Trophy](https://github-profile-trophy.vercel.app/?username=kanggara75)
-
-</details>
-
-<details>
-    <summary>&#127942 <b>GitHub Activity</b></summary><br/>
-
-![Metrics](https://metrics.lecoq.io/kanggara75?template=classic&base.community=0&base.metadata=0&languages=1&wakatime=1&tweets=1&lines=1&languages.limit=8&languages.sections=most-used&languages.colors=github&languages.threshold=0%25&languages.indepth=false&languages.recent.load=300&languages.recent.days=14&config.timezone=Asia%2FJakarta)
-
-</details>
