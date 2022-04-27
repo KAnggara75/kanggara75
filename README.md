@@ -6,7 +6,10 @@ Assalamu'alaikum <img src="https://user-images.githubusercontent.com/1303154/886
 ![GitHub last commit](https://img.shields.io/github/last-commit/kanggara75/kanggara75?color=blue&label=Last%20Update&style=for-the-badge)
 
 - 💻 I am will be programmer
-- 🌱 I’m currently learning Web and Mobile app Programing
+- 🌱 I’m currently learning Web Dev and Mobile Dev 📱 with Flutter
+- 📫 How to reach me: [kanggara.me](https://kanggara.me)
+- 📊 See My Stats on [CodersRank](https://profile.codersrank.io/user/kanggara)
+- 🕵️‍♂️ You can almost find me anywhere on internet by `KAnggara75` as a username.
 
 <h1 align="center"> Connect with me
 <p align="center">
@@ -34,11 +37,6 @@ Assalamu'alaikum <img src="https://user-images.githubusercontent.com/1303154/886
 
 ![Profile Dilihat](https://komarev.com/ghpvc/?username=kanggara75&color=blue&style=for-the-badge&label=Profile+Dilihat)
 
-## Stats:
-
-![GitHub last commit](https://github-readme-stats.vercel.app/api?username=kanggara75&show_icons=true&theme=radical)
-![GitHub last commit](https://github-readme-stats.vercel.app/api/top-langs/?username=kanggara75&theme=radical&layout=compact)
-
 ## WakaTime
 
 ![Wakatime](https://wakatime.com/share/@kanggara75/d06cb2b4-cc77-47d3-aa5d-7b2ff0310feb.svg)
@@ -50,7 +48,7 @@ Assalamu'alaikum <img src="https://user-images.githubusercontent.com/1303154/886
 ![github card](https://github-readme-stats.vercel.app/api/pin/?username=kanggara75&repo=TheSiS_Web&theme=dark)
 ![github card](https://github-readme-stats.vercel.app/api/pin/?username=kanggara75&repo=Imun&theme=nightowl)
 
-### My Machine
+### My Dev Kit
 
 ![Laptop](https://img.shields.io/badge/Hewlett_Packard-840_G2-blue?link=https://www.hp.com&link=https://support.hp.com/id-en/document/c04552057?&logo=hp&logoColor=blue)
 ![Smartphone](https://img.shields.io/badge/Samsung-M11-blue?link=https://www.samsung.com&link=https://www.samsung.com/id/smartphones/galaxy-m/galaxy-m11-blue-32gb-sm-m115fmbdxid/?&logo=samsung&logoColor=blue)
