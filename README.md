@@ -44,9 +44,7 @@ Assalamu'alaikum <img src="https://user-images.githubusercontent.com/1303154/886
 ## Repo Stats
 
 ![github card](https://github-readme-stats.vercel.app/api/pin/?username=kanggara75&repo=TheSiS&theme=dark)
-![github card](https://github-readme-stats.vercel.app/api/pin/?username=kanggara75&repo=TheSiS_App_Flutter&theme=dark)
-![github card](https://github-readme-stats.vercel.app/api/pin/?username=kanggara75&repo=TheSiS_Web&theme=dark)
-![github card](https://github-readme-stats.vercel.app/api/pin/?username=kanggara75&repo=Imun&theme=nightowl)
+![github card](https://github-readme-stats.vercel.app/api/pin/?username=pakaiwa&repo=api&theme=dark)
 
 ### My Dev Kit
 
