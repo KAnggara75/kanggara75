@@ -49,10 +49,11 @@ Assalamu'alaikum <img src="https://user-images.githubusercontent.com/1303154/886
 ### My Dev Kit
 
 ![Laptop](https://img.shields.io/badge/Hewlett_Packard-840_G2-blue?link=https://www.hp.com&link=https://support.hp.com/id-en/document/c04552057?&logo=hp&logoColor=blue)
-![Smartphone](https://img.shields.io/badge/Samsung-M11-blue?link=https://www.samsung.com&link=https://www.samsung.com/id/smartphones/galaxy-m/galaxy-m11-blue-32gb-sm-m115fmbdxid/?&logo=samsung&logoColor=blue)
+![Smartphone](https://img.shields.io/badge/Xperia-1-purple?&logo=sony&logoColor=blue)
 
 ![OS](https://img.shields.io/badge/Primary_OS-MacOS-blue?&logo=macos)
 ![OS](https://img.shields.io/badge/Secondary_OS-Windows-blue?&logo=windows)
 ![OS](https://img.shields.io/badge/Other_OS-Linux-blue?&logo=linux)
 
-![OS](https://img.shields.io/badge/Text_Editor-Visual_Studio_Code-blue?&logo=visualstudiocode&logoColor=blue)
+![Text Editor](https://img.shields.io/badge/Text_Editor-Visual_Studio_Code-blue?&logo=visualstudiocode&logoColor=blue)
+![Text Editor](https://img.shields.io/badge/Text_Editor-VIM-green?&logo=vim&logoColor=green)

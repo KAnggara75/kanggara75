@@ -1,19 +1,128 @@
-\documentclass[a4paper]{article}
+\documentclass{article}
+
+\usepackage{blindtext}
+\usepackage[a4paper, left=2.5cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{amsmath}% For the equation* environment
+\usepackage[english,bahasa]{babel}
+\usepackage{graphicx} %LaTeX package to import graphics
+\graphicspath{{img/}} %configuring the graphicx package
+
+\title{My first LaTeX document ya}
+\author{Hubert Farnsworth\thanks{Funded by the Overleaf team.}}
+\date{August 2022}
 \begin{document}
-Kelvin Anggara
+\maketitle
 
-De stelling van Pythagoras zegt dat a in het kwadraat plus b in het kwadraat gelijk is aan c in het kwadraat.
-In een formule: a2+b2=c2. Of in een display:
 
-a2+b2=c2.
+First document. This is a simple example, with no
+extra parameters or packages included.
+We have now added a title, author and date to our first \LaTeX{} document!
+% This line here is a comment. It will not be typeset in the document.
 
-Op de middelbare school beweest de jonge Gauss reeds dat dat de som van getallen 1, 2, 3, ..., 100 gelijk is aan 1/2 x 100 x 101. Meer in het algemeen zag hij al in dat:
 
-sum k=1 n = 1/2 n(n+1).
+Some of the \textbf{greatest}
+discoveries in \underline{science}
+were made by \textbf{\textit{accident}}.
 
-Smaken verschillen, maar de formule e i pi = -1 wordt een van de mooiste formules ter wereld gevonden, omdat hier alle belangrijke symbolen uit de wiskunde in voorkomen.
+Some of the greatest \emph{discoveries} in science
+were made by accident.
 
-Typeset zelf een formule die je mooi vindt. Heb je geen inspiratie, neem dan iets over uit Stochastiek 1. Mijn favoriete formule (of vergelijking of definitie) is:
+\textit{Some of the greatest \emph{discoveries}
+    in science were made by accident.}
 
-mijn-favoriete-formule
+\textbf{Some of the greatest \emph{discoveries}
+    in science were made by accident.}
+
+% The \includegraphcs command is 
+% provided (implemented) by the 
+% graphicx package
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{test.png}
+    \caption{A nice plot.}
+    \label{fig:test}
+\end{figure}
+
+\begin{itemize}
+    \item The individual entries are indicated with a black dot, a so-called bullet.
+    \item The text in the entries may be of any length.
+\end{itemize}
+
+\begin{enumerate}
+    \item This is the first entry in our list.
+    \item The list numbers increase with each entry we add.
+\end{enumerate}
+
+
+In physics, the mass-energy equivalence is stated
+by the equation $E=mc^2$, discovered in 1905 by Albert Einstein.
+
+
+\begin{math}
+    E=mc^2
+\end{math} is typeset in a paragraph using inline math mode---as is $E=mc^2$, and so too is \(E=mc^2\).
+
+The mass-energy equivalence is described by the famous equation
+\[ E=mc^2 \] discovered in 1905 by Albert Einstein.
+
+In natural units ($c = 1$), the formula expresses the identity
+\begin{equation}
+    E=m
+\end{equation}
+
+
+Subscripts in math mode are written as $a_b$ and superscripts are written as $a^b$. These can be combined and nested to write expressions such as
+
+\[ T^{i_1 i_2 \dots i_p}_{j_1 j_2 \dots j_q} = T(x^{i_1},\dots,x^{i_p},e_{j_1},\dots,e_{j_q}) \]
+
+We write integrals using $\int$ and fractions using $\frac{a}{b}$. Limits are placed on integrals using superscripts and subscripts:
+
+\[ \int_0^1 \frac{dx}{e^x} =  \frac{e-1}{e} \]
+
+Lower case Greek letters are written as $\omega$ $\delta$ etc. while upper case Greek letters are written as $\Omega$ $\Delta$.
+
+Mathematical operators are prefixed with a backslash as $\sin(\beta)$, $\cos(\alpha)$, $\log(x)$ etc.
+
+\section{First example}
+
+The well-known Pythagorean theorem \(x^2 + y^2 = z^2\) was proved to be invalid for other exponents, meaning the next equation has no integer solutions for \(n>2\):
+
+\[ x^n + y^n = z^n \]
+
+\section{Second example}
+
+This is a simple math expression \(\sqrt{x^2+1}\) inside text.
+And this is also the same:
+\begin{math}
+    \sqrt{x^2+1}
+\end{math}
+but by using another command.
+
+This is a simple math expression without numbering
+\[\sqrt{x^2+1}\]
+separated from text.
+
+This is also the same:
+\begin{displaymath}
+    \sqrt{x^2+1}
+\end{displaymath}
+
+\ldots and this:
+\begin{equation*}
+    \sqrt{x^2+1}
+\end{equation*}
+
+
+\begin{abstract}
+    This is a simple paragraph at the beginning of the
+    document. A brief introduction about the main subject.
+\end{abstract}
+
+After our abstract we can begin the first paragraph, then press ``enter'' twice to start the second one.
+
+This line will start a second paragraph.
+
+I will start the third paragraph and then add \\ a manual line break which causes this text to start on a new line but remains part of the same paragraph. Alternatively, I can use the \verb|\newline|\newline command to start a new line, which is also part of the same paragraph.
+
 \end{document}
