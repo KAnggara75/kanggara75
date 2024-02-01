@@ -1,24 +1,53 @@
-\documentclass{article}
+\documentclass[11pt,a4paper]{article}
 
-\usepackage{blindtext}
-\usepackage[a4paper, left=2.5cm, right=2cm, top=2cm, bottom=2cm]{geometry}
-\usepackage{amsmath}% For the equation* environment
-\usepackage[english,bahasa]{babel}
+\usepackage[left=2.5cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry} % set document margins
+\usepackage[parfill]{parskip} % Remove paragraph indentation
+
+
+\usepackage{hyperref} % Hyperlink package
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=black} % Hyperlink Config
+
+\usepackage[bahasa]{babel}
 \usepackage{graphicx} %LaTeX package to import graphics
 \graphicspath{{img/}} %configuring the graphicx package
 
-\title{My first LaTeX document ya}
-\author{Hubert Farnsworth\thanks{Funded by the Overleaf team.}}
-\date{August 2022}
-\begin{document}
-\maketitle
+\usepackage{xcolor}
 
+
+\usepackage{charter} % FONT OPTIONS
+
+% ------------ Utilities ------------
+
+\newcommand{\email}[1]{\href{mailto:#1}{#1}} % Ling to email
+\newcommand{\profilelink}[1]{\href{https://#1}{#1}} % to website
+% -----------------------------------
+
+\begin{document}
+
+\scriptsize\color{gray}Last updated on \today
+
+\color{black}
+
+% Header Name
+\begingroup
+\hfill{\MakeUppercase{\Huge\bfseries Kelvin Anggara}}\hfill
+\break
+\vspace{-1em}
+\hrule
+\vspace{0.2em}
+\hrule
+\hrule
+\vspace{-0.5em}
+\hfill\href{mailto:kelvin.kanggara@gmail.com}{kelvin.kanggara@gmail.com}\hfill
+\break
+\endgroup
 
 First document. This is a simple example, with no
 extra parameters or packages included.
 We have now added a title, author and date to our first \LaTeX{} document!
 % This line here is a comment. It will not be typeset in the document.
 
+\href{mailto:kelvin.kanggara@gmail.com}{kelvin.kanggara@gmail.com}
 
 Some of the \textbf{greatest}
 discoveries in \underline{science}
@@ -109,9 +138,7 @@ This is also the same:
 \end{displaymath}
 
 \ldots and this:
-\begin{equation*}
-    \sqrt{x^2+1}
-\end{equation*}
+
 
 
 \begin{abstract}
