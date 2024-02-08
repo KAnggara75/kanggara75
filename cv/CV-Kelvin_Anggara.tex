@@ -1,155 +1,106 @@
 \documentclass[11pt,a4paper]{article}
 
-\usepackage[left=2.5cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry} % set document margins
+\usepackage[left=2.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry} % set document margins
 \usepackage[parfill]{parskip} % Remove paragraph indentation
+\usepackage{fancyhdr} % Add header and Footer
 
+\usepackage[T1]{fontenc} % Encoding for pipe symbol
 
 \usepackage{hyperref} % Hyperlink package
-\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=black} % Hyperlink Config
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=black} % Hyperlink Config
+% \urlstyle{same}
 
-\usepackage[bahasa]{babel}
-\usepackage{graphicx} %LaTeX package to import graphics
-\graphicspath{{img/}} %configuring the graphicx package
+% \usepackage[bahasa]{babel}
+% \usepackage{graphicx} %LaTeX package to import graphics
+% \graphicspath{{img/}} %configuring the graphicx package
 
-\usepackage{xcolor}
-
-
-\usepackage{charter} % FONT OPTIONS
+\usepackage{xcolor} % Font Color with string
+\usepackage{fontawesome5}
+% \usepackage{charter} % FONT OPTIONS
 
 % ------------ Utilities ------------
-
 \newcommand{\email}[1]{\href{mailto:#1}{#1}} % Ling to email
-\newcommand{\profilelink}[1]{\href{https://#1}{#1}} % to website
+\newcommand{\link}[1]{\href{https://#1}{#1}} % to website
 % -----------------------------------
 
+% Header and footer Setup
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot{} % clear all header fields
+\fancyfoot[RO]{\tiny\color{gray}\textrm{Last updated on \today}}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\pipe}{|}
+
+% \setlength{\footskip}{4.08003pt}
+
 \begin{document}
-
-\scriptsize\color{gray}Last updated on \today
-
-\color{black}
-
-% Header Name
+% -------------------- HEADING--------------------
 \begingroup
-\hfill{\MakeUppercase{\Huge\bfseries Kelvin Anggara}}\hfill
+\hfill{\MakeUppercase{\huge\scshape\bfseries Kelvin Anggara}}\hfill
 \break
-\vspace{-1em}
-\hrule
-\vspace{0.2em}
-\hrule
-\hrule
 \vspace{-0.5em}
-\hfill\href{mailto:kelvin.kanggara@gmail.com}{kelvin.kanggara@gmail.com}\hfill
+\hrule
+\vspace{-0.2em}
+\hfill
+\faIcon{home}
+{Tanggerang Selatan, Banten}\pipe
+\faIcon{whatsapp}
+\href{https://wa.me/6282284705204}{+62 822 8470 5204}\pipe
+\faIcon{envelope}
+\email{kelvin.kanggara@gmail.com}
+\hfill
+\break
+\vspace{-0.5em}
+\hfill
+\faIcon{linkedin}
+\link{linkedin.com/in/kanggara75}\pipe
+\faIcon{github}
+\link{github.com/kanggara75}
+\hfill
 \break
 \endgroup
 
-First document. This is a simple example, with no
-extra parameters or packages included.
-We have now added a title, author and date to our first \LaTeX{} document!
-% This line here is a comment. It will not be typeset in the document.
+% ABOUT
+\begingroup
+\raggedright\MakeUppercase{\large\textbf{TENTANG SAYA}}
+\break\vspace{-1em}
+\hrule
+\normalsize{Saya Kelvin Anggara, saya memiliki latar belakang Pendidikan Teknik Elektro konsentrasi Teknik Komputer di Universitas Islam Negeri Sultan Syarif Kasim Riau. Saya juga memiliki pengalaman sebagai Programmer di perusahaan ITC bertanggung jawab dalam pengembangan Back End aplikasi sesuai spesifikasi yang diberikan. Saya memiliki ketertarikan kuat untuk berkarier dibidang komputer dan teknologi.}
+\break\vspace{-0.5em}
+\endgroup
 
-\href{mailto:kelvin.kanggara@gmail.com}{kelvin.kanggara@gmail.com}
+% Pengalaman Kerja
+\begingroup
+\raggedright\MakeUppercase{\large\textbf{Pengalaman Kerja}}
+\break\vspace{-1em}
+\hrule
+% Some content:
+\normalsize{Saya Kelvin Anggara, saya memiliki latar belakang Pendidikan Teknik Elektro konsentrasi Teknik
+  Komputer di Universitas Islam Negeri Sultan Syarif Kasim Riau. Saya juga memiliki pengalaman
+  sebagai Programmer di perusahaan ITC bertanggung jawab dalam pengembangan Back End aplikasi
+  sesuai spesifikasi yang diberikan. Saya memiliki ketertarikan kuat untuk berkarier dibidang komputer
+  dan teknologi.}
+\break\vspace{-0.5em}
+\endgroup
 
-Some of the \textbf{greatest}
-discoveries in \underline{science}
-were made by \textbf{\textit{accident}}.
-
-Some of the greatest \emph{discoveries} in science
-were made by accident.
-
-\textit{Some of the greatest \emph{discoveries}
-    in science were made by accident.}
-
-\textbf{Some of the greatest \emph{discoveries}
-    in science were made by accident.}
-
-% The \includegraphcs command is 
-% provided (implemented) by the 
-% graphicx package
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.75\textwidth]{test.png}
-    \caption{A nice plot.}
-    \label{fig:test}
-\end{figure}
-
-\begin{itemize}
-    \item The individual entries are indicated with a black dot, a so-called bullet.
-    \item The text in the entries may be of any length.
-\end{itemize}
-
-\begin{enumerate}
-    \item This is the first entry in our list.
-    \item The list numbers increase with each entry we add.
-\end{enumerate}
-
-
-In physics, the mass-energy equivalence is stated
-by the equation $E=mc^2$, discovered in 1905 by Albert Einstein.
-
-
-\begin{math}
-    E=mc^2
-\end{math} is typeset in a paragraph using inline math mode---as is $E=mc^2$, and so too is \(E=mc^2\).
-
-The mass-energy equivalence is described by the famous equation
-\[ E=mc^2 \] discovered in 1905 by Albert Einstein.
-
-In natural units ($c = 1$), the formula expresses the identity
-\begin{equation}
-    E=m
-\end{equation}
-
-
-Subscripts in math mode are written as $a_b$ and superscripts are written as $a^b$. These can be combined and nested to write expressions such as
-
-\[ T^{i_1 i_2 \dots i_p}_{j_1 j_2 \dots j_q} = T(x^{i_1},\dots,x^{i_p},e_{j_1},\dots,e_{j_q}) \]
-
-We write integrals using $\int$ and fractions using $\frac{a}{b}$. Limits are placed on integrals using superscripts and subscripts:
-
-\[ \int_0^1 \frac{dx}{e^x} =  \frac{e-1}{e} \]
-
-Lower case Greek letters are written as $\omega$ $\delta$ etc. while upper case Greek letters are written as $\Omega$ $\Delta$.
-
-Mathematical operators are prefixed with a backslash as $\sin(\beta)$, $\cos(\alpha)$, $\log(x)$ etc.
-
-\section{First example}
-
-The well-known Pythagorean theorem \(x^2 + y^2 = z^2\) was proved to be invalid for other exponents, meaning the next equation has no integer solutions for \(n>2\):
-
-\[ x^n + y^n = z^n \]
-
-\section{Second example}
-
-This is a simple math expression \(\sqrt{x^2+1}\) inside text.
-And this is also the same:
-\begin{math}
-    \sqrt{x^2+1}
-\end{math}
-but by using another command.
-
-This is a simple math expression without numbering
-\[\sqrt{x^2+1}\]
-separated from text.
-
-This is also the same:
-\begin{displaymath}
-    \sqrt{x^2+1}
-\end{displaymath}
-
-\ldots and this:
-
-
-
-\begin{abstract}
-    This is a simple paragraph at the beginning of the
-    document. A brief introduction about the main subject.
-\end{abstract}
-
-After our abstract we can begin the first paragraph, then press ``enter'' twice to start the second one.
-
-This line will start a second paragraph.
-
-I will start the third paragraph and then add \\ a manual line break which causes this text to start on a new line but remains part of the same paragraph. Alternatively, I can use the \verb|\newline|\newline command to start a new line, which is also part of the same paragraph.
+% Education
+\begingroup
+\raggedright\MakeUppercase{\large\textbf{PENDIDIKAN}}
+\break\vspace{-1em}
+\hrule
+\normalsize\raggedright\textbf{UIN SULTAN SYARIF KASIM RIAU}\hfill
+\raggedleft{Pekanbaru, Riau Indonesia}\\
+\normalsize\raggedright{Sarjana Teknik – Teknik Elektro –} \textbf{IPK: 3.52/4.00}\hfill
+\raggedleft{2016-2022}\\
+\normalsize\raggedright{Judul Tugas Akhir/Skripsi:}\\
+\small\raggedright\textbf{Smart Early Warning System untuk keamanan Sepeda Motor Berbasis Prosesor XTensa LX6}\\
+\break\vspace{-0.5em}
+\endgroup
 
 \end{document}
