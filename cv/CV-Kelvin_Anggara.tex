@@ -10,7 +10,7 @@
 \hypersetup{colorlinks=true, linkcolor=black, urlcolor=black} % Hyperlink Config
 % \urlstyle{same}
 
-% \usepackage[bahasa]{babel}
+\usepackage[bahasa]{babel}
 % \usepackage{graphicx} %LaTeX package to import graphics
 % \graphicspath{{img/}} %configuring the graphicx package
 
@@ -35,35 +35,37 @@
 \pdfgentounicode=1
 
 % -------------------- CUSTOM COMMANDS --------------------
-\newcommand{\pipe}{|}
+\newcommand{\pipe}{\,\,|\,\,}
+
+\newcommand{\resumeHeading}[1]{
+\hfill{\MakeUppercase{\huge\scshape\bfseries #1}}\hfill
+\break
+\vspace{-1em}
+\hrule
+}
+
+\newcommand{\resumeInfo}[1]{
+\vspace{-0.2em}
+\hfill
+\faIcon{home}\,\,{Tanggerang Selatan, Banten}\pipe
+\faIcon{whatsapp}\,\,\href{https://wa.me/6282284705204}{+62 822 8470 5204}\pipe
+\faIcon{envelope}\,\,\email{kelvin.kanggara@gmail.com}
+\hfill
+\break\vspace{-0.5em}
+\hfill
+\faIcon{linkedin}\,\,\link{linkedin.com/in/kanggara75}\pipe
+\faIcon{github}\,\,\link{github.com/kanggara75}
+\hfill
+\vspace{1em}
+}
 
 % \setlength{\footskip}{4.08003pt}
 
 \begin{document}
 % -------------------- HEADING--------------------
 \begingroup
-\hfill{\MakeUppercase{\huge\scshape\bfseries Kelvin Anggara}}\hfill
-\break
-\vspace{-0.5em}
-\hrule
-\vspace{-0.2em}
-\hfill
-\faIcon{home}
-{Tanggerang Selatan, Banten}\pipe
-\faIcon{whatsapp}
-\href{https://wa.me/6282284705204}{+62 822 8470 5204}\pipe
-\faIcon{envelope}
-\email{kelvin.kanggara@gmail.com}
-\hfill
-\break
-\vspace{-0.5em}
-\hfill
-\faIcon{linkedin}
-\link{linkedin.com/in/kanggara75}\pipe
-\faIcon{github}
-\link{github.com/kanggara75}
-\hfill
-\break
+\resumeHeading{Kelvin Anggara}
+\resumeInfo
 \endgroup
 
 % ABOUT
@@ -71,8 +73,8 @@
 \raggedright\MakeUppercase{\large\textbf{TENTANG SAYA}}
 \break\vspace{-1em}
 \hrule
-\normalsize{Saya Kelvin Anggara, saya memiliki latar belakang Pendidikan Teknik Elektro konsentrasi Teknik Komputer di Universitas Islam Negeri Sultan Syarif Kasim Riau. Saya juga memiliki pengalaman sebagai Programmer di perusahaan ITC bertanggung jawab dalam pengembangan Back End aplikasi sesuai spesifikasi yang diberikan. Saya memiliki ketertarikan kuat untuk berkarier dibidang komputer dan teknologi.}
-\break\vspace{-0.5em}
+\normalsize{Saya Kelvin Anggara, saya memiliki latar belakang Pendidikan Teknik Elektro konsentrasi Teknik Komputer di Universitas Islam Negeri Sultan Syarif Kasim Riau. Saya juga memiliki pengalaman sebagai Programmer di perusahaan ITC bertanggung jawab dalam pengembangan Back End aplikasi sesuai spesifikasi yang diberikan. Saya memiliki ketertarikan kuat untuk berkarier dibidang komputer dan teknologi.}\\
+\vspace{1em}
 \endgroup
 
 % Pengalaman Kerja
@@ -80,13 +82,13 @@
 \raggedright\MakeUppercase{\large\textbf{Pengalaman Kerja}}
 \break\vspace{-1em}
 \hrule
-% Some content:
-\normalsize{Saya Kelvin Anggara, saya memiliki latar belakang Pendidikan Teknik Elektro konsentrasi Teknik
-  Komputer di Universitas Islam Negeri Sultan Syarif Kasim Riau. Saya juga memiliki pengalaman
-  sebagai Programmer di perusahaan ITC bertanggung jawab dalam pengembangan Back End aplikasi
-  sesuai spesifikasi yang diberikan. Saya memiliki ketertarikan kuat untuk berkarier dibidang komputer
-  dan teknologi.}
-\break\vspace{-0.5em}
+\normalsize\raggedright\textbf{SIGMA CIPTA CARAKA/TELKOMSIGMA}\hfill
+\raggedleft{Tanggerang Selatan, Banten Indonesia}\\
+\small\raggedright\textbf{Junior Programmer}\hfill
+\raggedleft{2022 - Sekarang}\\
+\small\raggedright{Judul Tugas Akhir/Skripsi:}\\
+\small\raggedright\textbf{Smart Early Warning System untuk keamanan Sepeda Motor Berbasis Prosesor XTensa LX6}\\
+\vspace{1em}
 \endgroup
 
 % Education
@@ -97,9 +99,14 @@
 \normalsize\raggedright\textbf{UIN SULTAN SYARIF KASIM RIAU}\hfill
 \raggedleft{Pekanbaru, Riau Indonesia}\\
 \normalsize\raggedright{Sarjana Teknik – Teknik Elektro –} \textbf{IPK: 3.52/4.00}\hfill
-\raggedleft{2016-2022}\\
+\raggedleft{2016 - 2022}\\
 \normalsize\raggedright{Judul Tugas Akhir/Skripsi:}\\
 \small\raggedright\textbf{Smart Early Warning System untuk keamanan Sepeda Motor Berbasis Prosesor XTensa LX6}\\
+\vspace{0.5em}
+\normalsize\raggedright\textbf{SMK NUSANTARA}\hfill
+\raggedleft{Rokan Hilir, Riau Indonesia}\\
+\normalsize\raggedright{Teknik Komputer dan Jaringan}\hfill
+\raggedleft{2013 - 2016}\\
 \break\vspace{-0.5em}
 \endgroup
 
