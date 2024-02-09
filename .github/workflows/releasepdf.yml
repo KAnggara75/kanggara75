@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - cv/**
+      - .github/workflows/releasepdf.yml
 
 jobs:
   build_latex:
