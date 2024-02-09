@@ -2,30 +2,47 @@ name: Release CV as PDF
 
 on:
   push:
-    branches:
-      - 'releases'
-      - main
+    paths:
+      - cv/**
 
 jobs:
-  convert_via_pandoc:
-    runs-on: ubuntu-18.04
-    if: ${{ contains(github.event.head_commit.message, '#cv') }}
+  build_latex:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: create file list
-        id: files_list
-        run: |
-          echo "Lorem ipsum" > lorem_1.md  # create two example files
-          echo "dolor sit amet" > lorem_2.md
-          mkdir output  # create output dir
-          # this will also include README.md
-          echo "::set-output name=files::$(printf '"%s" ' *.md)"
-
-      - uses: docker://pandoc/latex:2.9
+      - name: Set up Git repository
+        uses: actions/checkout@v4
+      - name: latex2pdf
+        id: compile-latex-document
+        uses: thomas-chauvet/latex2pdf-action@1.0.5
         with:
-          args: --output=output/result.pdf ${{ steps.files_list.outputs.files }}
-          
-      - uses: actions/upload-artifact@master
+          output_dir: cv
+          main_latex_file: cv/CV-Kelvin_Anggara.tex
+          ctan_packages: fontawesome5 xcolor hyperref parskip fancyhdr babel fontenc
+      - name: Upload CV in PDF to the workflow tab
+        id: upload-workflow-tab
+        uses: actions/upload-artifact@v4
         with:
-          name: output
-          path: output
+          name: cv
+          path: cv/CV-Kelvin_Anggara.tex
+      - name: Create Release
+        id: create_release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
+      - name: Upload Release CV
+        id: upload-release-asset
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: cv/CV-Kelvin_Anggara.tex
+          asset_name: cv.pdf
+          asset_content_type: application/pdf
