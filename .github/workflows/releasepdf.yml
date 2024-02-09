@@ -18,7 +18,7 @@ jobs:
         with:
           output_dir: cv
           main_latex_file: cv/CV-Kelvin_Anggara.tex
-          ctan_packages: fontawesome5 xcolor hyperref parskip fancyhdr babel fontenc
+          ctan_packages: fontawesome5 parskip fancyhdr fontenc
       - name: Upload CV in PDF to the workflow tab
         id: upload-workflow-tab
         uses: actions/upload-artifact@v4
