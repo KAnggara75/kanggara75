@@ -1,34 +1,37 @@
 \documentclass[11pt,a4paper]{article}
 
-\usepackage[left=2.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry} % set document margins
-\usepackage[parfill]{parskip} % Remove paragraph indentation
-\usepackage{fancyhdr} % Add header and Footer
-
 \usepackage[T1]{fontenc} % Encoding for pipe symbol
-
-\usepackage{hyperref} % Hyperlink package
-\hypersetup{colorlinks=true, linkcolor=black, urlcolor=black} % Hyperlink Config
-% \urlstyle{same}
-
-% \usepackage[bahasa]{babel}
-% \usepackage{graphicx} %LaTeX package to import graphics
-% \graphicspath{{img/}} %configuring the graphicx package
-\usepackage{xstring} % for sub string
+\usepackage[parfill]{parskip} % Remove paragraph indentation
+\usepackage[left=2.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry} % set document margins
 
 \usepackage{xcolor} % Font Color with string
+\usepackage{xstring} % for sub string
+\usepackage{fancyhdr} % Add header and Footer
+\usepackage{ragged2e} % Alignment package
+\usepackage{hyperref} % Hyperlink package
 \usepackage{fontawesome5}
-% \usepackage{charter} % FONT OPTIONS
+\usepackage{blindtext}
+\usepackage{multicol}
+
+% URL link config
+\urlstyle{same}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=black} % Hyperlink Config
 
 % ------------ Utilities ------------
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\newcommand\nv[1][-0.5em]{\vspace{#1}}
 \newcommand{\email}[1]{\href{mailto:#1}{#1}} % Ling to email
-\newcommand{\link}[1]{\href{https://#1}{#1}} % to website
+\newcommand{\github}[1]{\href{https://github.com/#1}{#1}} % to Github
+\newcommand{\linkedin}[1]{\href{https://linkedin.com/in/#1}{#1}} % to LinkedIn
+\newcommand{\web}[1]{\href{https://#1}{#1}} % to Home Page
+
 \newcommand{\wa}[1]{\href{https://wa.me/#1}{
     \;\StrMid{#1}{1}{2}
     \;\StrMid{#1}{3}{5}
     \;\StrMid{#1}{6}{9}
     \;\StrMid{#1}{10}{13}
   }
-} % to website
+} % to WhatsApp
 % -----------------------------------
 
 % Header and footer Setup
@@ -40,7 +43,7 @@
 \fancyfoot[RO]{\tiny\color{gray}\textrm{Last updated on \today}}
 
 % Ensure that generate pdf is machine readable/ATS parsable
-% \pdfgentounicode=1
+\pdfgentounicode=1
 
 % -------------------- CUSTOM COMMANDS --------------------
 \newcommand{\pipe}{\,\,|\,\,}
@@ -59,17 +62,29 @@
 \faIcon{whatsapp}\,\,\wa{6282284705204}\pipe
 \faIcon{envelope}\,\,\email{kelvin.kanggara@gmail.com}
 \hfill
-\break\vspace{-0.5em}
+\break\nv
 \hfill
-\faIcon{linkedin}\,\,\link{linkedin.com/in/kanggara75}\pipe
-\faIcon{github}\,\,\link{github.com/kanggara75}
+\faIcon{linkedin}\,\,\linkedin{kanggara75}\pipe
+\faIcon{github}\,\,\github{kanggara75}
 \hfill
 \vspace{1em}
 }
 
-% \setlength{\footskip}{4.08003pt}
+\newcommand{\resumeSection}[1]{
+  \raggedright\MakeUppercase{\large\textbf{#1}}
+  \break\vspace{-1em}
+  \hrule
+}
+
+\newcommand{\resumeSectionItem}[4]{
+  \normalsize\raggedright\textbf{#1}\hfill
+  \small\raggedleft{#2}\\
+  \small\raggedright{#3}\hfill
+  \small\raggedleft{#4}\\
+}
 
 \begin{document}
+
 % -------------------- HEADING--------------------
 \begingroup
 \resumeHeading{Kelvin Anggara}
@@ -78,44 +93,87 @@
 
 % ABOUT
 \begingroup
-\raggedright\MakeUppercase{\large\textbf{TENTANG SAYA}}
-\break\vspace{-1em}
-\hrule
-\normalsize{Saya Kelvin Anggara, saya memiliki latar belakang Pendidikan Teknik Elektro konsentrasi Teknik Komputer di Universitas Islam Negeri Sultan Syarif Kasim Riau. Saya juga memiliki pengalaman sebagai Programmer di perusahaan ITC bertanggung jawab dalam pengembangan Back End aplikasi sesuai spesifikasi yang diberikan. Saya memiliki ketertarikan kuat untuk berkarier dibidang komputer dan teknologi.}\\
-\vspace{1em}
+\resumeSection{TENTANG SAYA}
+\normalsize\justifying{
+  Saya memiliki pengalaman lebih dari satu tahun di industri teknologi, khususnya dalam pengembangan perangkat lunak perbankan.
+  Saya juga terlibat dalam proyek pengembangan sistem di bidang perbankan yang melibatkan beberapa Vendor terkemuka sebagai Implementor.
+  Saya telah memperluas pemahaman tentang konsep-konsep pemrograman dan pengembangan perangkat lunak melalui pengalaman kerja dan pembelajaran mandiri.
+  Saya adalah seorang yang bersemangat dan terus berusaha untuk meningkatkan keterampilan saya dalam pengembangan perangkat lunak, serta siap untuk menghadapi tantangan baru dan berkontribusi dalam proyek-proyek yang inovatif.
+}
+\vspace{0.5em}
+\endgroup
+
+% Skills
+\begingroup
+\resumeSection{Skills}
+\nv
+\begin{multicols}{2}
+  \normalsize\textbf{Soft Skills}\vspace{-1em}
+  \small\justifying\begin{itemize}
+    \item{Berpikir Kritis}\nv
+    \item{Pengambilan Keputusan}\nv
+    \item{Penyelesaian Masalah}\nv
+    \item{Mudah Beradaptasi}\nv
+    \item{Bekerja Dalam Tim dan Kolaborasi}\nv
+    \item{Komunikasi}\nv
+    \item{Manajemen Projek}\nv
+    \item{Organisasi}
+  \end{itemize}
+  \normalsize\textbf{Hard Skills}\vspace{-1em}
+  \small\justifying\begin{itemize}
+    \item{\textbf{Backend $:$} Springboot (Java)\hfill Menengah}\nv
+    \item{\textbf{CI/CD   $:$} Github Action (yaml)\hfill Basic}\nv
+    \item{\textbf{Database$:$} Relational (SQL)\hfill Menengah}\nv
+    \item{\textbf{Design  $:$} Bitmap (GIMP)\hfill Menengah}\nv
+    \item{\textbf{Design  $:$} Vector (Inkscape)\hfill Menengah}\nv
+    \item{\textbf{Mobile  $:$} Flutter (Dart)\hfill Menengah}\nv
+    \item{\textbf{Office  $:$} Word, Excel, Latex\hfill Mahir}\nv
+    \item{\textbf{Web     $:$} Laravel (PHP)\hfill Menengah}
+  \end{itemize}
+\end{multicols}
+
 \endgroup
 
 % Pengalaman Kerja
 \begingroup
-\raggedright\MakeUppercase{\large\textbf{Pengalaman Kerja}}
-\break\vspace{-1em}
-\hrule
-\normalsize\raggedright\textbf{SIGMA CIPTA CARAKA/TELKOMSIGMA}\hfill
-\raggedleft{Tanggerang Selatan, Banten Indonesia}\\
-\small\raggedright\textbf{Junior Programmer}\hfill
-\raggedleft{2022 - Sekarang}\\
-\small\raggedright{Judul Tugas Akhir/Skripsi:}\\
-\small\raggedright\textbf{Smart Early Warning System untuk keamanan Sepeda Motor Berbasis Prosesor XTensa LX6}\\
-\vspace{1em}
+\resumeSection{Pengalaman Kerja}
+\resumeSectionItem{SIGMA CIPTA CARAKA/TELKOMSIGMA}{Banten, Indonesia}{\textbf{Junior Programmer}}{2022 - Sekarang}
+\nv\small\justifying\begin{itemize}
+  \item{Menerjemahkan dokumen teknis/design ke dalam kode program sesuai dengan standard kode pemrogramman.}\nv
+  \item{Merancang dan membuat user interface yang baik agar mudah dioperasikan.}\nv
+  \item{Ikut terlibat dalam proses desain dan proses pengembangan aplikasi.}\nv
+  \item{Melakukan unit test dan mendokumentasikan hasil dari unit test.}\nv
+  \item{Terlibat dalam proses testing/integration test serta memastikan performance aplikasi berjalan dengan baik.}
+\end{itemize}
+\endgroup
+
+% Project
+\begingroup
+\resumeSection{Projects}
+\resumeSectionItem{ATM Link HimBaRa JALIN eChannel Platform}{\href{https://telkomsigma.co.id}{TELKOMSIGMA}}{\textbf{ATMs and EFTs\small\textsuperscript{\textcopyright} Euronet Implementor}}{2022 - 2024}
+\vspace{0.5em}
+\normalsize\justifying{Bersana dengan Tim \href{https://telkomsigma.co.id}{Telkomsigma}, \href{https://www.jalin.co.id/}{Euronet Worldwide}, dan \href{https://www.jalin.co.id}{Jalin Pembayaran Nusantara} Mengembangkan Platform New ATM Link HimBaRa/Himpunan
+  Bank Milik Negara (BNI, BRI, BTN, dan Bank Mandiri) dengan 335 Fitur yang menggunakan pendekatan berdasarkan Penerbit Kartu (Issuer Approach)
+  yang di implementasikan pada 53 ribu Terminal ATM di seluruh Indonesia.
+}
+\nv\small\justifying\begin{itemize}
+  \item{Implementasi ATMs Screen Flow berdasarkan FSD (Functional Specification Document)}\nv
+  \item{Mengembangkan 1 Fitur dalam waktu 3 hari hingga SIT}\nv
+  \item{Melakukan Unit testing pada setiap fitur yang di kembangkan}\nv
+  \item{Membuat dokumentasi depedency yang diperlukan untuk setiap fitur yang di kembangkan}\nv
+  \item{Melakukan Tracing and Debugging selama proses development testing SIT, UAT hingga Go Live}
+\end{itemize}
 \endgroup
 
 % Education
 \begingroup
-\raggedright\MakeUppercase{\large\textbf{PENDIDIKAN}}
-\break\vspace{-1em}
-\hrule
-\normalsize\raggedright\textbf{UIN SULTAN SYARIF KASIM RIAU}\hfill
-\raggedleft{Pekanbaru, Riau Indonesia}\\
-\normalsize\raggedright{Sarjana Teknik – Teknik Elektro –} \textbf{IPK: 3.52/4.00}\hfill
-\raggedleft{2016 - 2022}\\
-\normalsize\raggedright{Judul Tugas Akhir/Skripsi:}\\
+\resumeSection{PENDIDIKAN}
+\resumeSectionItem{UIN SULTAN SYARIF KASIM RIAU}{Pekanbaru, Riau Indonesia}{{Sarjana Teknik – Teknik Elektro –} \textbf{IPK: 3.52/4.00}}{2016 - 2022}
+\small\raggedright{Judul Tugas Akhir/Skripsi:}\\
 \small\raggedright\textbf{Smart Early Warning System untuk keamanan Sepeda Motor Berbasis Prosesor XTensa LX6}\\
 \vspace{0.5em}
-\normalsize\raggedright\textbf{SMK NUSANTARA}\hfill
-\raggedleft{Rokan Hilir, Riau Indonesia}\\
-\normalsize\raggedright{Teknik Komputer dan Jaringan}\hfill
-\raggedleft{2013 - 2016}\\
-\break\vspace{-0.5em}
+\resumeSectionItem{SMK NUSANTARA}{Rokan Hilir, Riau Indonesia}{Teknik Komputer dan Jaringan}{2013 - 2016}
+\break\nv
 \endgroup
 
 \end{document}
