@@ -12,40 +12,37 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
-      - name: latex2pdf
+        with:
+          fetch-depth: 0
+      - name: Build CV Indo
         id: compile-latex-document
         uses: KAnggara75/tex2pdf@0.1
         with:
           output_dir: cv
-          main_latex_file: cv/CV-Kelvin_Anggara.tex
-          ctan_packages: fontenc parskip geometry xcolor xstring fancyhdr ragged2e hyperref fontawesome5 blindtext multicol 
-      - name: check file
-        run: ls -la && ls -la cv
+          main_latex_file: cv/CV-Kelvin_Anggara-ID.tex
+          ctan_packages: fontenc parskip geometry xcolor xstring fancyhdr ragged2e hyperref fontawesome5 blindtext multicol
+      - name: Build CV English
+        id: compile-latex-document
+        uses: KAnggara75/tex2pdf@0.1
+        with:
+          output_dir: cv
+          main_latex_file: cv/CV-Kelvin_Anggara-EN.tex
+          ctan_packages: fontenc parskip geometry xcolor xstring fancyhdr ragged2e hyperref fontawesome5 blindtext multicol
       - name: Upload CV in PDF to the workflow tab
         id: upload-workflow-tab
         uses: actions/upload-artifact@v4
         with:
           name: cv
-          path: cv/CV-Kelvin_Anggara.pdf
+          path: cv
+      - name: Install GitVersion
+        uses: gittools/actions/gitversion/setup@v1.1.1
+        with:
+          versionSpec: "5.12.0"
+      - name: Use GitVersion
+        id: gitversion
+        uses: gittools/actions/gitversion/execute@v1.1.1
       - name: Create Release
-        id: create_release
-        if: startsWith(github.ref, 'refs/tags/')
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: ncipollo/release-action@v1.14.0
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          draft: false
-          prerelease: false
-      - name: Upload Release CV
-        id: upload-release-asset
-        if: startsWith(github.ref, 'refs/tags/')
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: cv/CV-Kelvin_Anggara.tex
-          asset_name: cv.pdf
-          asset_content_type: application/pdf
+          artifacts: "cv/CV-Kelvin_Anggara-EN.pdf,cv/CV-Kelvin_Anggara-ID.pdf"
+          tag: ${{ steps.gitversion.outputs.CommitDate }}
