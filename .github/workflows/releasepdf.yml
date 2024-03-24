@@ -20,13 +20,13 @@ jobs:
           main_latex_file: cv/CV-Kelvin_Anggara.tex
           ctan_packages: fontenc parskip geometry xcolor xstring fancyhdr ragged2e hyperref fontawesome5 blindtext multicol 
       - name: check file
-        run: ls -la
+        run: ls -la && ls -la cv
       - name: Upload CV in PDF to the workflow tab
         id: upload-workflow-tab
         uses: actions/upload-artifact@v4
         with:
           name: cv
-          path: cv/CV-Kelvin_Anggara.tex
+          path: cv/CV-Kelvin_Anggara.pdf
       - name: Create Release
         id: create_release
         if: startsWith(github.ref, 'refs/tags/')
