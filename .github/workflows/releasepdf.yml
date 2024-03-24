@@ -15,14 +15,14 @@ jobs:
         with:
           fetch-depth: 0
       - name: Build CV Indo
-        id: compile-latex-document
+        id: compile-latex-document-id
         uses: KAnggara75/tex2pdf@0.1
         with:
           output_dir: cv
           main_latex_file: cv/CV-Kelvin_Anggara-ID.tex
           ctan_packages: fontenc parskip geometry xcolor xstring fancyhdr ragged2e hyperref fontawesome5 blindtext multicol
       - name: Build CV English
-        id: compile-latex-document
+        id: compile-latex-document-en
         uses: KAnggara75/tex2pdf@0.1
         with:
           output_dir: cv
