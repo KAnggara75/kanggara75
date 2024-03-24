@@ -18,7 +18,7 @@ jobs:
         with:
           output_dir: cv
           main_latex_file: cv/CV-Kelvin_Anggara.tex
-          ctan_packages: fontawesome5 parskip fancyhdr fontenc xstring ragged2e
+          ctan_packages: fontenc parskip geometry xcolor xstring fancyhdr ragged2e hyperref fontawesome5 blindtext multicol 
       - name: check file
         run: ls -la
       - name: Upload CV in PDF to the workflow tab
