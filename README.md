@@ -7,7 +7,7 @@ Assalamu'alaikum <img src="https://user-images.githubusercontent.com/1303154/886
 
 - 💻 I am will be programmer
 - 🌱 I’m currently learning Web Dev and Mobile Dev 📱 with Flutter
-- 📫 How to reach me: [kanggara.me](https://kanggara.me)
+- 📫 How to reach me: [kanggara.my.id](https://kanggara.my.id)
 - 📊 See My Stats on [CodersRank](https://profile.codersrank.io/user/kanggara)
 - 🕵️‍♂️ You can almost find me anywhere on internet by `KAnggara75` as a username.
 
