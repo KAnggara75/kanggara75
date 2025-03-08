@@ -3,7 +3,7 @@ name: Release CV as PDF
 on:
   push:
     paths:
-      - cv/**
+      - cv/**/*.tex
       - .github/workflows/releasepdf.yml
 
 jobs:
