@@ -37,6 +37,8 @@ Assalamu'alaikum <img src="https://user-images.githubusercontent.com/1303154/886
 
 ![Profile Dilihat](https://komarev.com/ghpvc/?username=kanggara75&color=blue&style=for-the-badge&label=Profile+Dilihat)
 
+[![roadmap.sh](https://roadmap.sh/card/tall/64b818a36a01543ae2de5ef2?variant=dark)](https://roadmap.sh)
+
 ## WakaTime
 
 ![Wakatime](https://wakatime.com/share/@kanggara75/d06cb2b4-cc77-47d3-aa5d-7b2ff0310feb.svg)
