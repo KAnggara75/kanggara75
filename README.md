@@ -94,6 +94,8 @@
 ![github card](https://github-readme-stats.vercel.app/api/pin/?username=kanggara75&repo=TheSiS&theme=one_dark_pro)
 ![github card](https://github-readme-stats.vercel.app/api/pin/?username=pakaiwa&repo=api&theme=one_dark_pro)
 
+[![roadmap.sh](https://roadmap.sh/card/tall/64b818a36a01543ae2de5ef2?variant=dark)](https://roadmap.sh)
+
 ## WakaTime
 
 ![Wakatime](https://wakatime.com/share/@kanggara75/d06cb2b4-cc77-47d3-aa5d-7b2ff0310feb.svg)
