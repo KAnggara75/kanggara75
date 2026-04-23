@@ -23,7 +23,7 @@ jobs:
           ctan_packages: fontenc parskip geometry xcolor xstring fancyhdr ragged2e hyperref fontawesome5 blindtext multicol
       - name: Build CV English
         id: compile-latex-document-en
-        uses: KAnggara75/tex2pdf@v0.0.1
+        uses: KAnggara75/tex2pdf@v0.0.2
         with:
           output_dir: cv
           main_latex_file: cv/CV-Kelvin_Anggara-EN.tex
