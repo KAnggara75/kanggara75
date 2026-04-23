@@ -11,38 +11,36 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6.0.1
         with:
           fetch-depth: 0
       - name: Build CV Indo
         id: compile-latex-document-id
-        uses: KAnggara75/tex2pdf@0.1
+        uses: KAnggara75/tex2pdf@v0.0.7
         with:
           output_dir: cv
           main_latex_file: cv/CV-Kelvin_Anggara-ID.tex
-          ctan_packages: fontenc parskip geometry xcolor xstring fancyhdr ragged2e hyperref fontawesome5 blindtext multicol
       - name: Build CV English
         id: compile-latex-document-en
-        uses: KAnggara75/tex2pdf@0.1
+        uses: KAnggara75/tex2pdf@v0.0.7
         with:
           output_dir: cv
           main_latex_file: cv/CV-Kelvin_Anggara-EN.tex
-          ctan_packages: fontenc parskip geometry xcolor xstring fancyhdr ragged2e hyperref fontawesome5 blindtext multicol
       - name: Upload CV in PDF to the workflow tab
         id: upload-workflow-tab
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7.0.1
         with:
           name: cv
           path: cv
       - name: Install GitVersion
-        uses: gittools/actions/gitversion/setup@v1.1.1
+        uses: gittools/actions/gitversion/setup@v4.5.0
         with:
-          versionSpec: "5.12.0"
+          versionSpec: "6.7.0"
       - name: Use GitVersion
         id: gitversion
-        uses: gittools/actions/gitversion/execute@v1.1.1
+        uses: gittools/actions/gitversion/execute@v4.5.0
       - name: Create Release
-        uses: ncipollo/release-action@v1.14.0
+        uses: ncipollo/release-action@v1.21.0
         with:
           artifacts: "cv/CV-Kelvin_Anggara-EN.pdf,cv/CV-Kelvin_Anggara-ID.pdf"
           tag: ${{ steps.gitversion.outputs.CommitDate }}
