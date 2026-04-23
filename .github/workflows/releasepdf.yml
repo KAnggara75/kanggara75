@@ -20,14 +20,14 @@ jobs:
         with:
           output_dir: cv
           main_latex_file: cv/CV-Kelvin_Anggara-ID.tex
-          ctan_packages: fontenc parskip geometry xcolor xstring fancyhdr ragged2e hyperref fontawesome5 blindtext multicol
+          ctan_packages: parskip geometry xcolor xstring fancyhdr ragged2e hyperref fontawesome5 blindtext multicol
       - name: Build CV English
         id: compile-latex-document-en
         uses: KAnggara75/tex2pdf@v0.0.6
         with:
           output_dir: cv
           main_latex_file: cv/CV-Kelvin_Anggara-EN.tex
-          ctan_packages: fontenc parskip geometry xcolor xstring fancyhdr ragged2e hyperref fontawesome5 blindtext multicol
+          ctan_packages: parskip geometry xcolor xstring fancyhdr ragged2e hyperref fontawesome5 blindtext multicol
       - name: Upload CV in PDF to the workflow tab
         id: upload-workflow-tab
         uses: actions/upload-artifact@v7.0.1
