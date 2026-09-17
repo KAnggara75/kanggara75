@@ -161,10 +161,12 @@
 
 % Technical Projects and Contributions
 \begingroup
-\resumeSection{PORTOFOLIO \& INISIATIF TEKNIS}
+\resumeSection{PORTOFOLIO \& INISIATIF TEKNIS (GITHUB: \href{https://github.com/kanggara75}{kanggara75} \pipe \href{https://github.com/kanggara}{kanggara})}
 \nv\small\justifying\begin{itemize}
-  \item{\textbf{Distributed System \& Event-Driven Reference Architecture :} Merancang dan mempublikasikan implementasi referensi microservices berbasis Java Quarkus/Spring Boot dan Kafka yang menerapkan CQRS, Transactional Outbox/Inbox, serta Idempotent Consumer pada repositori GitHub personal (\github{kanggara75}).}\nv
-  \item{\textbf{Developer Tooling \& CI/CD Automation :} Mengembangkan tool automasi lingkungan kerja developer dan konfigurasi pipeline deployment berbasis GitOps (ArgoCD) serta containerization terstandarisasi untuk meningkatkan produktivitas engineering.}
+  \item{\href{https://github.com/kanggara75/scc2go}{\textbf{scc2go}} (Go Library -- \href{https://pkg.go.dev/github.com/KAnggara75/scc2go}{pkg.go.dev}) : Merancang client library Go open-source untuk integrasi konfigurasi terpusat Spring Cloud Config Server ke Viper registry; dilengkapi automated retry (Resty v3), hierarki multi-profile precedence, dan structured logging Zerolog.}\nv
+  \item{\href{https://github.com/kanggara75/Rest2Kafka}{\textbf{Rest2Kafka}} \& \href{https://github.com/kanggara/KafkaTopic}{\textbf{KafkaTopic}} (Go, K8s) : Membangun service ingestion event multi-cluster Kafka via REST API berbasis pure Go (zero CGO) serta Kubernetes CRD/Operator deklaratif untuk manajemen siklus topik dan retensi pesan secara otomatis.}\nv
+  \item{\href{https://github.com/kanggara75/sentinel}{\textbf{Sentinel}} (Go, React) : Membangun auth service terpusat berbasis JWT \& granular RBAC untuk arsitektur microservices; mendukung token revocation seketika dan integrasi API Gateway via forwardAuth.}\nv
+  \item{\href{https://github.com/kanggara/DevOps}{\textbf{DevOps Automation Suite}} (CI/CD) : Mengembangkan modul reusable GitHub Actions untuk standarisasi pipeline testing, build Maven/Docker, publikasi registry GHCR, dan deployment Helm ke Kubernetes.}
 \end{itemize}
 \endgroup
 
