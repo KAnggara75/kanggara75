@@ -13,8 +13,8 @@ on:
 
 # Prevent concurrent jobs from colliding on output branch push/lock
 concurrency:
-  group: snake-${{ github.ref }}
-  cancel-in-progress: true
+  group: output-branch
+  cancel-in-progress: false
 
 jobs:
   generate:
@@ -40,5 +40,6 @@ jobs:
         with:
           target_branch: output
           build_dir: dist
+          keep_history: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
