@@ -2,7 +2,7 @@
 
 \usepackage[T1]{fontenc} % Encoding for pipe symbol
 \usepackage[parfill]{parskip} % Remove paragraph indentation
-\usepackage[left=2.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry} % set document margins
+\usepackage[left=1.6cm, right=1.6cm, top=1.3cm, bottom=1.3cm]{geometry} % set document margins
 
 \usepackage{xcolor} % Font Color with string
 \usepackage{xstring} % for sub string
@@ -10,8 +10,6 @@
 \usepackage{ragged2e} % Alignment package
 \usepackage{hyperref} % Hyperlink package
 \usepackage{fontawesome5}
-\usepackage{blindtext}
-\usepackage{multicol}
 
 % URL link config
 \urlstyle{same}
@@ -19,10 +17,10 @@
 
 % ------------ Utilities ------------
 \newcommand\tab[1][1cm]{\hspace*{#1}}
-\newcommand\nv[1][-0.5em]{\vspace{#1}}
-\newcommand{\email}[1]{\href{mailto:#1}{#1}} % Ling to email
+\newcommand\nv[1][-0.45em]{\vspace{#1}}
+\newcommand{\email}[1]{\href{mailto:#1}{#1}} % Link to email
 \newcommand{\github}[1]{\href{https://github.com/#1}{#1}} % to Github
-\newcommand{\linkedin}[1]{\href{https://linkedin.com/in/#1}{#1}} % to LinkedIn
+\newcommand{\linkedin}[1]{\href{https://linkedin.com/in/#1}{linkedin.com/in/#1}} % to LinkedIn
 \newcommand{\web}[1]{\href{https://#1}{#1}} % to Home Page
 
 \newcommand{\wa}[1]{\href{https://wa.me/#1}{
@@ -48,36 +46,38 @@
 \newcommand{\resumeHeading}[1]{
 \hfill{\MakeUppercase{\huge\scshape\bfseries #1}}\hfill
 \break
-\vspace{-1em}
+\vspace{-1.1em}
 \hrule
 }
 
 \newcommand{\resumeInfo}[1]{
 \vspace{-0.2em}
 \hfill
-\faIcon{home}\,\,{Tanggerang Selatan, Banten}\pipe
+\faIcon{home}\,\,{Tangerang Selatan, Banten}\pipe
 \faIcon{whatsapp}\,\,\wa{628992199373}\pipe
 \faIcon{envelope}\,\,\email{kelvin.kanggara@gmail.com}
 \hfill
 \break\nv
 \hfill
+\faIcon{globe}\,\,\web{kanggara.my.id}\pipe
 \faIcon{linkedin}\,\,\linkedin{kanggara75}\pipe
 \faIcon{github}\,\,\github{kanggara75}
 \hfill
-\vspace{1em}
+\vspace{0.3em}
 }
 
 \newcommand{\resumeSection}[1]{
   \raggedright\MakeUppercase{\large\textbf{#1}}
-  \break\vspace{-1em}
+  \break\vspace{-1.0em}
   \hrule
+  \vspace{0.2em}
 }
 
 \newcommand{\resumeSectionItem}[4]{
   \normalsize\raggedright\textbf{#1}\hfill
-  \small\raggedleft{#2}\\
+  \small\raggedleft{#2}\\[-0.1em]
   \small\raggedright{#3}\hfill
-  \small\raggedleft{#4}\\
+  \small\raggedleft{#4}\\[-0.15em]
 }
 
 \begin{document}
@@ -92,130 +92,80 @@
 \begingroup
 \resumeSection{TENTANG SAYA}
 \normalsize\justifying{
-	Backend Developer sejak 2022 dengan pengalaman membangun sistem backend yang skalabel dan efisien menggunakan Java (Spring Boot, Quarkus) dan Golang. 
-	Terampil dalam merancang dan mengembangkan RESTful API, serta mengelola arsitektur berbasis microservices dengan Docker, Kubernetes, dan GitOps menggunakan ArgoCD. 
-	Berpengalaman dalam sistem event-driven menggunakan Apache Kafka dan Solace, serta pengelolaan database MySQL dan PostgreSQL. 
-	Memiliki pemahaman BPMN untuk pemodelan proses bisnis dan implementasi CI/CD menggunakan GitHub Actions. Fokus pada pengembangan sistem yang reliable, maintainable, dan siap produksi dalam lingkungan terdistribusi.
+	Backend Developer dengan pengalaman 4 tahun dalam merancang, membangun, dan mengoptimalkan sistem backend terdistribusi berskala enterprise menggunakan Java (Spring Boot, Quarkus) serta Golang. Spesialis dalam rekayasa arsitektur event-driven (Apache Kafka, Solace), orkestrasi proses bisnis terdistribusi (Kogito BPMN v2), dan implementasi transactional consistency patterns (Transactional Outbox/Inbox, Idempotent Consumer). Berpengalaman luas dalam integrasi core fintech (disbursement batching, multi-beneficiary split rekening, anti-fraud/AML), orkestrasi microservices dengan Docker, Kubernetes, dan Kong API Gateway, serta penerapan GitOps (ArgoCD). Memiliki rekam jejak terbukti dalam delivery lebih dari 100 fitur dan resolusi insiden produksi mission-critical hingga tahap Go-Live di industri asuransi, telekomunikasi, dan perbankan.
 }
 \vspace{0.1em}
 \endgroup
 
 % Skills
 \begingroup
-\resumeSection{Keahlian}
+\resumeSection{Keahlian Teknis}
 \nv
-\begin{multicols}{2}
-  \normalsize\textbf{Soft Skills}\vspace{-1em}
-  \small\justifying\begin{itemize}
-    \item{Komunikasi teknis dan non-teknis}\nv
-    \item{Problem solving dan berpikir kritis}\nv
-    \item{Manajemen pekerjaan dan prioritas}\nv
-    \item{Adaptasi cepat terhadap teknologi baru}\nv
-    \item{Kolaborasi dalam tim lintas fungsi}\nv
-    \item{Pengambilan keputusan berbasis analisis}\nv
-  \end{itemize}
-  \normalsize\textbf{Hard Skills}\vspace{-1em}
-  \small\justifying\begin{itemize}
-    \item{\textbf{Backend Dev $:$} \hfill Java (Spring Boot, Quarkus)}\nv
-    \item{\textbf{Event-Driven   $:$} \hfill Apache Kafka, Solace}\nv
-    \item{\textbf{DevOps   $:$} \hfill Docker, Kubernetes, ArgoCD}\nv
-    \item{\textbf{Database   $:$} \hfill SQL, Redis}\nv
-    \item{\textbf{Mobile (basic exposure)   $:$} \hfill Flutter (Dart)}\nv
-    \item{\textbf{Database $:$} \hfill SQL, Redis}\nv
-  \end{itemize}
-\end{multicols}
-
+\small\justifying\begin{itemize}
+  \item{\textbf{Bahasa \& Framework :}} {Java (Spring Boot, Quarkus), Golang}\nv
+  \item{\textbf{Event-Driven \& Messaging :}} {Apache Kafka (DLQ, Topic Partitioning, Consumer Idempotency), Solace}\nv
+  \item{\textbf{Arsitektur \& Desain Sistem :}} {Perancangan Sistem Terdistribusi, Transactional Outbox/Inbox, Microservices, Async Worker}\nv
+  \item{\textbf{Orkestrasi \& API Gateway :}} {Kogito BPMN v2, Kong API Gateway, Declarative REST Client v3, RESTful API}\nv
+  \item{\textbf{Cloud \& DevOps / GitOps :}} {Docker, Kubernetes, ArgoCD, CI/CD (GitHub Actions), Linux, Helm}\nv
+  \item{\textbf{Basis Data \& Caching :}} {PostgreSQL, MySQL, Redis}\nv
+  \item{\textbf{Testing \& Observabilitas :}} {JUnit 5, API Contract Testing, Distributed Tracing \& Profiling, Postman}
+\end{itemize}
 \endgroup
 
 % Pengalaman Kerja
 \begingroup
 \resumeSection{Pengalaman Kerja}
-\resumeSectionItem{IFG Life}{Jakarta Pusat, Indonesia}{\textbf{Backend Developer}}{Jun 2025 - Sekarang}
+\resumeSectionItem{IFG Life}{Jakarta Pusat, Indonesia}{\textbf{Backend Developer}}{Jul 2025 - Sekarang}
 \nv\small\justifying\begin{itemize}
-  \item{Optimized kebutuhan dan dokumen teknis/desain ke dalam implementasi kode sesuai standar pemrograman dan best practice.}\nv
-  \item{Berkolaborasi dalam perancangan sistem dan proses pengembangan aplikasi end-to-end.}\nv
-  \item{Mengembangkan dan mengoptimalkan API serta komponen backend untuk mendukung kebutuhan aplikasi.}\nv
-  \item{Melakukan unit testing serta mendokumentasikan hasil pengujian secara sistematis.}\nv
-  \item{Terlibat dalam integration testing untuk memastikan kualitas, stabilitas, dan performa aplikasi sebelum rilis produksi.}
-\end{itemize}
-\resumeSectionItem{XL Axiata, Tbk}{Jakarta Selatan, Indonesia}{\textbf{Backend Developer}}{Jun 2024 - Jun 2025}
-\nv\small\justifying\begin{itemize}
-  \item{Optimized dokumen teknis/design ke dalam kode program sesuai dengan standard kode pemrogramman.}\nv
-  \item{Merancang dan membuat user interface yang baik agar mudah dioperasikan.}\nv
-  \item{Ikut terlibat dalam proses desain dan proses pengembangan aplikasi.}\nv
-  \item{Melakukan unit test dan mendokumentasikan hasil dari unit test.}\nv
-  \item{Terlibat dalam proses testing/integration test serta memastikan performance aplikasi berjalan dengan baik.}
-\end{itemize}
-\resumeSectionItem{SIGMA CIPTA CARAKA/TELKOMSIGMA}{Banten, Indonesia}{\textbf{Junior Programmer}}{Okt 2022 - Mei 2024}
-\nv\small\justifying\begin{itemize}
-  \item{Optimized dokumen teknis/design ke dalam kode program sesuai dengan standard kode pemrogramman.}\nv
-  \item{Merancang dan membuat user interface yang baik agar mudah dioperasikan.}\nv
-  \item{Ikut terlibat dalam proses desain dan proses pengembangan aplikasi.}\nv
-  \item{Melakukan unit test dan mendokumentasikan hasil dari unit test.}\nv
-  \item{Terlibat dalam proses testing/integration test serta memastikan performance aplikasi berjalan dengan baik.}
+  \item{Memodernisasi workflow operasional polis korporat menggunakan Kogito BPMN v2 dan Quarkus; mengarsiteksi migrasi sistem penarikan dana (Withdrawal) ke Apache Kafka dengan konfigurasi DLQ, exponential retry policy, dan consumer idempotency guna mengeliminasi risiko transaksi ganda dan data-loss.}\nv
+  \item{Menerapkan Transactional Outbox Pattern dan fitur split rekening multi-penerima guna mengisolasi antrean batch disbursement serta sinkronisasi tagihan premi recurring secara atomik.}\nv
+  \item{Mengarsiteksi integrasi asinkron evaluasi fraud checking, Anti-Money Laundering (AML), dan validasi kependudukan berjenjang dengan skema automated callback timeout untuk menjamin kepatuhan regulasi finansial.}\nv
+  \item{Merancang service mikro berbasis Quarkus Declarative REST Client v3 serta mengonfigurasi API routing, rate-limiting, dan IP whitelisting pada Kong API Gateway.}\nv
+  \item{Mengimplementasikan correlation ID dan centralized logging end-to-end melintasi event broker dan REST microservices guna menjamin audit trail kepatuhan transaksi asuransi jiwa.}\nv
+  \item{Menetapkan standar penulisan unit testing (JUnit 5) dan API contract testing lintas tim/vendor eksternal, memangkas siklus verifikasi regresi pada fase User Acceptance Testing (UAT).}\nv
+  \item{Mengawal deployment dan merilis 100+ fitur serta bug fix produksi ke tahap Go-Live dengan zero-downtime; melakukan tuning resource requests/limits container Quarkus di Kubernetes, mengoptimalkan utilisasi memori pod hingga \textasciitilde{}30--40\% dibandingkan baseline konvensional, serta otomatisasi GitOps via ArgoCD.}
 \end{itemize}
 \endgroup
 
-% Project
+\pagebreak
+
 \begingroup
-\resumeSection{Projects}
-\resumeSectionItem{Automation Operation Policy}{\href{https://ifg-life.id}{IFG Life}}{\textbf{ }}{Jun 2025 - sekarang}
-\vspace{0.5em}
-\normalsize\justifying{
-	Melakukan improvement arsitektur sistem dari synchronous menjadi asynchronous untuk meningkatkan scalability dan performa sistem. Request yang diterima dari event broker disimpan terlebih dahulu ke database sebagai persistent queue sebelum diproses oleh worker yang telah disediakan.
-}
+\resumeSection{Pengalaman Kerja (Lanjutan)}
+\resumeSectionItem{XLSmart}{Jakarta Selatan, Indonesia}{\textbf{Backend Developer}}{Jun 2024 - Jun 2025}
 \nv\small\justifying\begin{itemize}
-  \item{Melakukan tracing dan debugging selama proses development untuk memastikan alur eksekusi sistem berjalan sesuai desain.}
-  \item{Mendukung proses System Integration Testing (SIT) dengan mengidentifikasi dan memperbaiki issue pada integrasi antar service.}
-  \item{Terlibat dalam User Acceptance Testing (UAT) dengan melakukan validasi fitur berdasarkan skenario bisnis dan feedback pengguna.}
+  \item{Mentransformasi pemrosesan kampanye promosi MCCM dari arsitektur sinkronus menjadi event-driven worker pool via Kafka/Solace; memangkas response time acknowledgment API dari \textasciitilde{}2--3 detik ke sub-200ms (p99) serta menjaga availability throughput transaksi loyalty reward pada jam sibuk.}\nv
+  \item{Menerapkan Transactional Inbox Pattern dan asynchronous decoupling layer untuk transaksi kredit Pulsa Pay Later, mengisolasi lonjakan request pengguna dari core transaction engine guna mencegah bottleneck dan timeout.}\nv
+  \item{Mengembangkan backend service loyalty reward yang terintegrasi dengan engine pihak ketiga (Comarch) pada aplikasi MyXL dan Axisnet untuk menangani penukaran poin berkonkurensi tinggi secara aman dan konsisten.}\nv
+  \item{Menerapkan pola resiliency (circuit breaker, fallback handling, dan bulkhead isolation) untuk menjamin ketersediaan service saat upstream provider mengalami degradasi performa.}\nv
+  \item{Melakukan distributed tracing, profiling performa, dan optimasi query database secara intensif guna mengeliminasi blocking I/O selama siklus development, SIT, UAT hingga rilis produksi zero-downtime.}\nv
+  \item{Menjalankan API contract testing dan pengujian integrasi end-to-end bekerja sama dengan tim lintas divisi dan vendor eksternal untuk memastikan stabilitas rilis aplikasi.}
 \end{itemize}
-\resumeSectionItem{MCCM Pulsa Pay Letter}{\href{https://xl.co.id}{XL Axiata}}{\textbf{ }}{Mar 2025 - Mei 2025}
-\vspace{0.5em}
+\resumeSectionItem{SIGMA CIPTA CARAKA / TELKOMSIGMA}{Banten, Indonesia}{\textbf{Junior Programmer}}{Okt 2022 - Mei 2024}
 \nv\small\justifying\begin{itemize}
-  \item{Mengimplementasikan alur event-driven di mana request dari event broker disimpan terlebih dahulu ke database sebagai persistent queue sebelum diproses oleh worker yang telah disediakan.}
-  \item{Melakukan improvement pada sistem Pulsa Pay Later dengan mengubah arsitektur dari synchronous menjadi asynchronous untuk meningkatkan skalabilitas dan performa layanan.}
-  \item{Meningkatkan reliabilitas proses transaksi pulsa pay later dengan memisahkan proses penerimaan request dan eksekusi bisnis logic guna mengurangi bottleneck pada sistem utama.}
-\end{itemize}
-\resumeSectionItem{MCCM Fulfillment}{\href{https://xl.co.id}{XL Axiata}}{\textbf{ }}{Jan 2025 - Feb 2025}
-\vspace{0.5em}
-\normalsize\justifying{
-	Melakukan improvment pada sistem yang sudah ada dimana sebelumnya menggunakan metode sinkonronous menjadi asynchronous. Request yang di terima dari Event Broker akan di simpan ke dalam database terlebih dahulu sebelum di proses oleh worker yang sudah di sediakan.
-}
-\nv\small\justifying\begin{itemize}
-  \item{Melakukan Tracing and Debugging selama proses development testing SIT, UAT hingga Go Live}
-\end{itemize}
-\resumeSectionItem{Comarch Redeem Reward}{\href{https://xl.co.id}{XL Axiata}}{\textbf{MyXL \& Axisnet}}{Jul 2024 - Des 2024}
-\vspace{0.5em}
-\normalsize\justifying{
-	Melakukan pengembangan pada siste Loyalty yang memungkinkan pengguna untuk menukarkan poin yang telah di kumpulkan dari setiap transaksi yang dilakukan oleh pengguna.
-	Fitur ini di implementasikan pada aplikasi MyXL dan Axisnet yang di kembangkan oleh tim XL Axiata.
-}
-\nv\small\justifying\begin{itemize}
-  \item{Melakukan Tracing and Debugging selama proses development testing SIT, UAT hingga Go Live}
-\end{itemize}
-\resumeSectionItem{ATM Link HimBaRa JALIN eChannel Platform}{\href{https://telkomsigma.co.id}{TELKOMSIGMA}}{\textbf{ATMs and EFTs\small\textsuperscript{\textcopyright} Euronet Implementor}}{Des 2022 - Jun 2024}
-\vspace{0.5em}
-\normalsize\justifying{Bersama dengan Tim \href{https://telkomsigma.co.id}{Telkomsigma}, \href{https://www.jalin.co.id/}{Euronet Worldwide}, dan \href{https://www.jalin.co.id}{Jalin Pembayaran Nusantara} Mengembangkan Platform New ATM Link HimBaRa/Himpunan
-  Bank Milik Negara (BNI, BRI, BTN, dan Bank Mandiri) dengan 335 Fitur yang menggunakan pendekatan berdasarkan Penerbit Kartu (Issuer Approach)
-  yang di implementasikan pada 53 ribu Terminal ATM di seluruh Indonesia.
-}
-\nv\small\justifying\begin{itemize}
-  \item{Implementasi ATMs Screen Flow berdasarkan FSD (Functional Specification Document)}\nv
-  \item{Melakukan testing pada setiap fitur yang di kembangkan}\nv
-  \item{Membuat dokumentasi dependency yang diperlukan untuk setiap fitur yang di kembangkan}\nv
-  \item{Melakukan Tracing and Debugging selama proses development testing SIT, UAT hingga Go Live}
+  \item{Mengembangkan modul backend transaksi finansial dan business logic switching Euronet pada platform New ATM Link HimBaRa (BNI, BRI, BTN, Bank Mandiri) berbasis pendekatan Issuer Approach.}\nv
+  \item{Menerjemahkan Functional Specification Document (FSD) ke dalam implementasi screen flow dan rekayasa 335 fitur terstandarisasi yang dioperasikan pada 53.000+ mesin ATM di seluruh Indonesia bersama PT Jalin Pembayaran Nusantara.}\nv
+  \item{Mengembangkan modul transaksi finansial secara modular dengan turnaround time rata-rata 3 hari kerja per fitur hingga siap masuk fase System Integration Testing (SIT).}\nv
+  \item{Menyusun dokumentasi dependensi arsitektur teknis serta melakukan analisis dan penelusuran (tracing) paket pesan transaksi finansial ISO-8583 selama fase SIT, UAT, hingga rollout nasional tanpa kegagalan integrasi.}\nv
+  \item{Melaksanakan pengujian unit komprehensif dan resolusi bug switching untuk memastikan keandalan transaksi finansial real-time.}
 \end{itemize}
 \endgroup
 
 % Education
 \begingroup
 \resumeSection{PENDIDIKAN}
-\resumeSectionItem{UIN SULTAN SYARIF KASIM RIAU}{Pekanbaru, Riau Indonesia}{{Sarjana Teknik – Teknik Elektro –} \textbf{IPK: 3.52/4.00}}{2016 - 2022}
-\small\raggedright{Judul Tugas Akhir/Skripsi:}\\
-\small\raggedright\textbf{Smart Early Warning System untuk keamanan Sepeda Motor Berbasis Prosesor XTensa LX6}\\
-\vspace{0.5em}
-\resumeSectionItem{SMK NUSANTARA}{Rokan Hilir, Riau Indonesia}{Teknik Komputer dan Jaringan}{2013 - 2016}
-\break\nv
+\resumeSectionItem{UIN SULTAN SYARIF KASIM RIAU}{Pekanbaru, Riau, Indonesia}{{Sarjana Teknik (S.T.) -- Teknik Elektro (Konsentrasi Komputer) --} \textbf{IPK: 3.52/4.00}}{2016 - 2022}
+\small\raggedright{Judul Tugas Akhir: \textbf{Smart Early Warning System untuk Keamanan Sepeda Motor Berbasis Prosesor XTensa LX6}}\\
+\small\justifying{Merancang sistem keamanan berbasis Internet of Things (IoT) waktu-nyata menggunakan arsitektur embedded microcontroller 32-bit, komunikasi nirkabel, sensor telemetri, dan protokol transmisi data terdistribusi.}
+\vspace{0.2em}
+\endgroup
+
+% Technical Projects and Contributions
+\begingroup
+\resumeSection{PORTOFOLIO \& INISIATIF TEKNIS}
+\nv\small\justifying\begin{itemize}
+  \item{\textbf{Distributed System \& Event-Driven Reference Architecture :} Merancang dan mempublikasikan implementasi referensi microservices berbasis Java Quarkus/Spring Boot dan Kafka yang menerapkan CQRS, Transactional Outbox/Inbox, serta Idempotent Consumer pada repositori GitHub personal (\github{kanggara75}).}\nv
+  \item{\textbf{Developer Tooling \& CI/CD Automation :} Mengembangkan tool automasi lingkungan kerja developer dan konfigurasi pipeline deployment berbasis GitOps (ArgoCD) serta containerization terstandarisasi untuk meningkatkan produktivitas engineering.}
+\end{itemize}
 \endgroup
 
 \end{document}
