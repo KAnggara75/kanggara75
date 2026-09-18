@@ -110,5 +110,5 @@
 </p>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/KAnggara75/count.svg" alt="Visitor Counter" />
+  <img src="https://count.timeworn.net/@kanggara75" alt="Visitor Counter" />
 </p>
