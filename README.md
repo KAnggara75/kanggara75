@@ -105,10 +105,12 @@
 
 ## Repo Stats
 
-![github card](https://github-readme-stats.vercel.app/api?username=kanggara75&theme=one_dark_pro&show_icons=true)
-![github card](https://github-readme-stats.vercel.app/api/top-langs?username=KAnggara75&layout=compact&langs_count=6&theme=one_dark_pro)
-![github card](https://github-readme-stats.vercel.app/api/pin/?username=kanggara75&repo=TheSiS&theme=one_dark_pro)
-![github card](https://github-readme-stats.vercel.app/api/pin/?username=pakaiwa&repo=api&theme=one_dark_pro)
+<div align="center">
+  <img src="https://github-readme-stats-fast.vercel.app/api?username=kanggara75&theme=one_dark_pro&show_icons=true" alt="GitHub Stats" />
+  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=KAnggara75&layout=compact&langs_count=6&theme=one_dark_pro" alt="Top Languages" />
+  <br/>
+  <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=kanggara75&repo=TheSiS&theme=one_dark_pro" alt="Pinned Repo TheSiS" />
+  <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=pakaiwa&repo=api&theme=one_dark_pro" alt="Pinned Repo PakaiWA" />
 </div>
 
 ## WakaTime
@@ -116,3 +118,5 @@
 ![Wakatime](https://wakatime.com/share/@kanggara75/d06cb2b4-cc77-47d3-aa5d-7b2ff0310feb.svg)
 
 ![Snake animation](https://raw.githubusercontent.com/KAnggara75/KAnggara75/output/snake.svg)
+
+![Pacman animation](https://raw.githubusercontent.com/KAnggara75/KAnggara75/output/pacman-contribution-graph.svg)
